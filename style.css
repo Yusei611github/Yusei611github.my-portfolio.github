@@ -1,6 +1,6 @@
 /* 共通 */
 body {
-  padding: 50px 90px;
+  padding: 50px 90px 0px 90px;
 }
 
 body {
@@ -241,3 +241,90 @@ main .portfolio p {
   margin-top: 40px;
 }
 /* footer */
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer .menu ul {
+  display: flex;
+}
+
+
+footer .menu {
+  margin:90px auto 40px;
+  
+}
+
+footer .menu ul {
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .menu li:hover {
+  text-decoration: underline;
+}
+
+footer .menu li {
+  font-size: 12px;
+}
+
+/* スマホ対応レスポンシブ */
+@media(max-width: 600px) {
+  body {
+    background-color: aquamarine;
+  }
+
+  header .top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .top ul {
+    margin-top: 32px;
+  }
+
+  main .greeting p {
+    font-size: 12px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
+
+  main .service .my-service {
+    display: flex;
+    flex-direction: column;
+  }
+
+main .service .my-service nav + nav {
+  margin-top: 32px;
+}
+
+main .about .my-data {
+  margin-left: 40px;
+}
+
+main .about .about-top {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+main .about img {
+  margin: 0px auto;
+  width: 100px;
+  height: 100%;
+}
+
+main .about .my-data {
+  margin-top: 24px;
+}
+
+main .skill .container {
+  display: flex;
+  flex-direction: column;
+}
+
+main .skill .container li + li {
+  margin-top: 12px;
+}
+}
