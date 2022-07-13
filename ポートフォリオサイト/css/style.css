@@ -1,0 +1,330 @@
+/* 共通 */
+body {
+  padding: 50px 90px 0px 90px;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+body li {
+  list-style: none;
+}
+/* header */
+header .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 50px;
+}
+
+header h1 {
+  font-size: 32px;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header li {
+  list-style: none;
+  font-weight: bold;
+}
+
+
+header .menu ul {
+  display: flex;
+}
+
+header .menu li + li {
+  margin-left: 16px;
+}
+
+header .menu li:hover {
+  text-decoration: underline;
+}
+
+/* main */
+main .greeting .container {
+  text-align: center;
+}
+
+main .greeting img {
+  max-width: 100%;
+  
+
+}
+
+main .greeting .container {
+  position: relative;
+  
+}
+
+main .greeting p {
+  position: absolute;
+  top: 30%;
+  left: 22%;
+  font-size: 18px;
+}
+
+main .service {
+  border:solid #ffa500;
+}
+
+main .service .container {
+  margin: 32px auto;
+}
+
+main .service h2{
+  text-decoration: underline;
+}
+
+main .service  h3, h4 {
+  font-weight: normal;
+}
+
+main .service .direction, .design, .coding {
+  text-align: center;
+}
+
+main .service h2 {
+  text-align: center;
+  font-size: 32px;
+}
+
+main .service .my-service {
+  display: flex;
+  margin-top: 32px;
+}
+
+main .service .my-service nav + nav {
+  margin-left: 36px;
+}
+
+main .service .my-service h3 {
+  font-size: 20px;
+}
+
+main .service .my-service h4 {
+  font-size: 14px;
+}
+
+main .service .my-service i {
+  font-size: 56px;
+}
+
+main .service p {
+  font-size: 12px;
+}
+
+
+main .about {
+  margin-top: 160px;
+  background: #eee;
+  padding: 24px 80px 24px;
+
+}
+
+main .about h2 {
+  font-size: 32px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+main .about .about-top {
+  display: flex;
+  margin: 40px auto;
+  /* background: #f5a500; */
+
+}
+
+main ul + img {
+  margin-left: 150px;
+  margin-right: 80px;
+}
+
+main .about .my-data {
+  display: flex;
+  flex-flow: column;
+  padding: 16px auto;
+  justify-content: space-around;
+  /* background: #f9e900; */
+  margin-left: 140px;
+}
+
+main .about img {
+  width: 160px;
+  /* margin-left: 88px; */
+  
+}
+
+main .about .about-text {
+  margin-top: 40px;
+}
+
+main .experience {
+  margin-top: 160px;
+  background: #eee;
+  padding: 24px;
+  text-align: center;
+}
+
+main .experience h2 {
+  font-size: 32px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+main .experience ul {
+  margin-top: 40px;
+}
+
+main .experience li + li {
+  margin-top: 24px;
+}
+
+main .experience h3 {
+  font-weight: bold;
+}
+
+main .experience p {
+  margin-top: 8px;
+  margin-left: 50px;
+}
+
+main .skill {
+  margin-top: 160px;
+  background: #eee;
+  padding: 24px 80px 24px;
+}
+
+main .skill h2 {
+  font-size: 32px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+main .skill .container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+main .skill .item {
+  text-align: center;
+}
+
+main .skill .item h3{
+  font-weight: bold;
+}
+
+main .skill .item i {
+  font-size: 40px;
+}
+
+main .portfolio {
+  margin-top: 160px;
+  background: #eee;
+  padding: 24px 80px 24px;
+  text-align: center;
+}
+
+main .portfolio h2 {
+  font-size: 32px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+main .portfolio p {
+  margin-top: 40px;
+}
+/* footer */
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer .menu ul {
+  display: flex;
+}
+
+
+footer .menu {
+  margin:90px auto 40px;
+  
+}
+
+footer .menu ul {
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .menu li:hover {
+  text-decoration: underline;
+}
+
+footer .menu li {
+  font-size: 12px;
+}
+
+/* スマホ対応レスポンシブ */
+@media(max-width: 600px) {
+  body {
+    background-color: aquamarine;
+  }
+
+  header .top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .top ul {
+    margin-top: 32px;
+  }
+
+  main .greeting p {
+    font-size: 12px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
+
+  main .service .my-service {
+    display: flex;
+    flex-direction: column;
+  }
+
+main .service .my-service nav + nav {
+  margin-top: 32px;
+}
+
+main .about .my-data {
+  margin-left: 40px;
+}
+
+main .about .about-top {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+main .about img {
+  margin: 0px auto;
+  width: 100px;
+  height: 100%;
+}
+
+main .about .my-data {
+  margin-top: 24px;
+}
+
+main .skill .container {
+  display: flex;
+  flex-direction: column;
+}
+
+main .skill .container li + li {
+  margin-top: 12px;
+}
+}
